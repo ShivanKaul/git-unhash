@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Git utility command to show contents of blob from subfoldered hash.
+
+# Usage: 
+#     git unhash .git/objects/11/<rest-of-SHA1-hash>
+#     git unhash 11/<rest-of-SHA1-hash>
+#     git unhash <SHA1-hash>
+
+# Confirm that we are in a git repo
+# Source: https://github.com/paulirish/git-open/blob/master/git-open
+
+git rev-parse --is-inside-work-tree &>/dev/null
+if [[ $? != 0 ]]; then
+	  echo "Not a git repository."
+	  exit 1
+fi
+
+HASH=(${1//\// })
+
+if [ ${#HASH[@]} -ne 1 ]; then
+	HASH=${HASH[${#HASH[@]} - 2]}${HASH[${#HASH[@]} - 1]}
+fi
+
+git show $HASH

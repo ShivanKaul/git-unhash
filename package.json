@@ -1,0 +1,24 @@
+{
+  "name": "git-unhash",
+  "version": "0.0.1",
+  "description": "'Unhash' git SHA-1 objects from the command line. Pass in path to object in .git folder.",
+  "main": "git-unhash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivanKaul/git-unhash.git"
+  },
+  "bin": {
+    "git-unhash": "git-unhash"
+  },
+  "keywords": [
+    "git",
+    "git",
+    "show"
+  ],
+  "author": "Shivan Kaul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShivanKaul/git-unhash/issues"
+  },
+  "homepage": "https://github.com/ShivanKaul/git-unhash#readme"
+}
