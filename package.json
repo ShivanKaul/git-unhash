@@ -1,6 +1,6 @@
 {
   "name": "git-unhash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "'Unhash' git SHA-1 objects from the command line. Pass in path to object in .git folder.",
   "main": "git-unhash",
   "repository": {
