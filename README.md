@@ -13,5 +13,5 @@ git unhash
 ## Installation
 
 ```sh
-npm install --g git-unhash
+npm install -g git-unhash
 ```
